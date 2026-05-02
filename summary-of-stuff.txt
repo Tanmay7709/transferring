@@ -5,3 +5,24 @@ and im planning to use it with either hyprland or some other good tiling window 
 video game files : 
 minecraft
 mGBA (gameboy advanced emulator) saved some games and save files 
+
+
+
+apps to install after switching: 
+kdenlive 
+discord (yeah ill switch to something different eventually)
+obsidian (for notes taking) 
+vs code 
+an alternative to spotify
+librewolf and brave browser
+godot (yeah and please try to make some games oke)
+OBS studio
+fish shell for the terminal and also kitty for the terminal since ill be using hyprland
+htop (its not an application of a sort but a terminal kinda thing but ill install)
+
+
+games to install : 
+DDLC 
+minecraft (not from tlauncher)
+mGBA (for playing those pokemon gamse)
+OSU (maybe idk)
