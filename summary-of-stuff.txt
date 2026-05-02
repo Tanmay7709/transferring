@@ -1,0 +1,7 @@
+so ill be adding here all the names of the stuff that i wanna migrate from my current OS to the next OS which ill be using after switching 
+its name is cachyos 
+and im planning to use it with either hyprland or some other good tiling window manager so yeah lets write the actual stuff over here oke :)
+
+video game files : 
+minecraft
+mGBA (gameboy advanced emulator) saved some games and save files 
