@@ -20,6 +20,15 @@ OBS studio
 fish shell for the terminal and also kitty for the terminal since ill be using hyprland
 htop (its not an application of a sort but a terminal kinda thing but ill install)
 
+// new apps here that i use now 
+shotcut 
+vscodium
+zen and brave browser
+godot - we'll try this thing 
+Qtractor - a digital audio workspace and also lightweight;
+Drawing - a drawing utility 
+zim desktop wiki - a note taking app(lightweight too) 
+
 
 games to install : 
 DDLC 
