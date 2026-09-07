@@ -45,11 +45,26 @@ https://wallpaperscraft.com/
 
 username and passwords
 website : itch.io 
-username : red01glass        password : red_ribbon
+username : red01glass        passwd : red_ribbon
 website : account.matrix.org
-username : tanmay-gamer01     password : red01glass
+username : tanmay-gamer01     passwd : red01glass
 website : neocities.org
-username : tanmaybahule97@gmail.com       password : Blue-Onion
+username : tanmaybahule97@gmail.com       passwd : Blue-Onion
+
+
+// finally we're ready to prepare for switching to antiX 
+final list here: 
+a lightweight discord alternative | currently webcord is what i use; 
+a lightweight but good ide | currently vscodium 
+a gud editor or shotcut 
+godot 
+zen and brave browser 
+a gud terminal like kitty or more lightweight and gud 
+Qtractor a audio editor or something i forgot the right term 
+Drawing : for visualizing stuff on laptop through the cursor 
+zim desktop wiki - a notetaking app if it already has a note taking app ill just use that since it'll be more lightweight 
+yeah and other stuff they are same so not much difference and also get the save file of pokemon fire red with you 
+
 
 
 
