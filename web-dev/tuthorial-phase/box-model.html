@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>box-model</title>
+  <style>
+    * {
+      padding: 0;
+      width: 0;
+      font-family: monospace;
+      color: white;
+    }
+    body {
+      background-color: black;
+      height: 200vh;
+    }
+    .sec1 {
+      height: 25vh;
+      width: 100vh;
+      border: 0.25rem solid red;
+    }
+    .sec2 {
+      margin-top: 1rem;
+      height: 25vh;
+      width: 75vh;
+      border: 0.25rem solid blue;
+      position: relative;
+    }
+    .container {
+      width: 20rem;
+      height: 2rem;
+      border: 2px solid white;
+      color: white; 
+    }
+    .box1 {
+      position: relative;
+      left: 25rem;
+      top: 12.5rem;
+    }
+    .box2 {
+      position: absolute; 
+      top: 0;
+      right: 0;
+    }
+    .box4 {
+      position: absolute;
+      height: 3.25rem;
+      top: 0;
+      right: 0;
+    }
+    .box5 {
+      position: fixed;
+      height: 4rem;
+      width: 20rem;
+      bottom: 2rem;
+      right: 0.5rem;
+      border: 1rem solid pink;
+      font-size: 1.25rem;
+      padding: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="sec1">
+    <div class="container box1">div 1(relative position)</div>
+    <div class="container box2">div 2(absolute position)</div>
+    <div class="container">div 3(vanilla div: has nothing)</div>
+  </div>
+  <div class="sec2">
+    <div class="container box4">div 4(absolute but relative to the parent container)</div>
+    <div class="container box5">div 5(fixed position)</div>
+    <div class="container">div 6(vanilla div: has nothing)</div>
+  </div>
+</body>
+</html>

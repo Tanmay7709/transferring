@@ -1,0 +1,284 @@
+
+/* color combination 0: Earthly Green */
+* {
+  background-color:#cad2c5;
+  background-color:#84a98c;
+  background-color:#52796f;
+  background-color:#354f52;
+  background-color:#2f3e46;
+} 
+
+/* 1: fresh greens */
+* {
+  background-color: #386641; 
+  background-color: #6a994e; 
+  background-color: #a7c957; 
+  background-color: #f2e8cf; 
+  background-color: #bc4749;
+}
+
+/* 2: crimson hues */
+* {
+  background-color:#250902; 
+  background-color:#38040e; 
+  background-color:#640d14; 
+  background-color:#800e13; 
+  background-color:#800e13; 
+}
+
+/* 3: ocean breeze */
+* {
+  background-color:#03045e; 
+  background-color:#0077b6; 
+  background-color:#00b4d8; 
+  background-color:#90e0ef; 
+  background-color:#caf0f8; 
+}
+
+/* 4: leafy green garden */
+* {
+  background-color:#132a13; 
+  background-color:#31572c; 
+  background-color:#4f772d; 
+  background-color:#90a955; 
+  background-color:#ecf39e; 
+}
+
+/* 5: automn sunset */
+* {
+  background-color:#461220; 
+  background-color:#8c2f39; 
+  background-color:#b23a48; 
+  background-color:#fcb9b2; 
+  background-color:#fed0bb; 
+}
+
+/* 6: ocean pearl delight */
+* {
+  background-color:#006d77; 
+  background-color:#83c5be; 
+  background-color:#edf6f9; 
+  background-color:#ffddd2; 
+  background-color:#e29578; 
+}
+
+/* 7: velvet plum dreamland */
+* {
+  background-color:#420039; 
+  background-color:#932f6d; 
+  background-color:#ab7dab; 
+  background-color:#dcccff; 
+  background-color:#f6f2ff; 
+}
+
+/* 8: midnight fire dance */
+* {
+  background-color:#007a7a; 
+  background-color:#004040; 
+  background-color:#000000; 
+  background-color:#3d0000; 
+  background-color:#7a0000; 
+}
+
+/* 9: earthly tones */
+* {
+  background-color:#555b6e; 
+  background-color:#89b0ae; 
+  background-color:#bee3db; 
+  background-color:#faf9f9; 
+  background-color:#ffd6ba; 
+}
+
+/* 10: neutral earth tones */
+* {
+  background-color:#0a0908; 
+  background-color:#22333b; 
+  background-color:#eae0d5; 
+  background-color:#c6ac8f; 
+  background-color:#5e503f; 
+}
+/* 11: earthly green tones */
+* {
+  background-color:#718355; 
+  background-color:#87986a; 
+  background-color:#97a97c; 
+  background-color:#b5c99a; 
+  background-color:#cfe1b9; 
+  background-color:#e9f5db; 
+}
+
+/* 12: purple dream */
+* {
+  background-color:#231942; 
+  background-color:#5e548e; 
+  background-color:#9f86c0; 
+  background-color:#be95c4; 
+  background-color:#e0b1cb; 
+}
+
+/* 13: serene nature tones */
+* {
+  background-color:#6b9080; 
+  background-color:#a4c3b2;
+  background-color:#cce3de; 
+  background-color:#eaf4f4; 
+  background-color:#f6fff8; 
+}
+
+/* 14: monochrome harmony */
+* {
+  background-color:#242423; 
+  background-color:#333533; 
+  background-color:#f5cb5c; 
+  background-color:#e8eddf;
+  background-color:#cfdbd5;
+}
+
+/* 15: misty morning */
+* {
+  background-color:#407076; 
+  background-color:#698996; 
+  background-color:#97b1a6; 
+  background-color:#ebbab9; 
+  background-color:#c9c5ba; 
+}
+
+/* 16: soft pastels */
+* {
+  background-color:#735d78; 
+  background-color:#b392ac; 
+  background-color:#d1b3c4; 
+  background-color:#e8c2ca; 
+  background-color:#f7d1cd; 
+}
+
+/* 17: vintage romance */
+* {
+  background-color:#6d2e46;
+  background-color:#a26769;
+  background-color:#d5b9b2;
+  background-color:#ece2d0;
+  background-color:#cebebe;
+}
+
+/* 18: green oasis */
+* {
+  background-color:#114b5f;
+  background-color:#1a936f;
+  background-color:#88d498;
+  background-color:#b6f3c3;
+  background-color:#c6dabf;
+}
+
+/* 19: soft serenity */
+* {
+  background-color:#847577;
+  background-color:#a6a2a2;
+  background-color:#cfd2cd;
+  background-color:#e5e6e4;
+  background-color:#fbfbf2;
+}
+
+/* 20: soft pastels (cool colors) */
+* {
+  background-color:#4a7c59;
+  background-color:#68b0ab;
+  background-color:#8fc0a9;
+  background-color:#c8d5b9;
+  background-color:#faf3dd;
+}
+
+/* 21: turquoise harmony */
+* {
+  background-color:#05668d;
+  background-color:#028090;
+  background-color:#00a896;
+  background-color:#02c39a;
+  background-color:#f0f3bd;
+}
+
+/* 22: coastal vibes */
+* {
+  background-color:#160f29;
+  background-color:#246a73;
+  background-color:#368f8b;
+  background-color:#ddbea8;
+  background-color:#f3dfc1;
+}
+
+/* 23: fresh blossom */
+* {
+  background-color:#664147;
+  background-color:#2f9c95;
+  background-color:#40c9a2;
+  background-color:#a3f7b5;
+  background-color:#e5f9e0;
+}
+
+/* 24: muted earthly tones */
+* {
+  background-color:#6d6875;
+  background-color:#b5838d;
+  background-color:#e5989b;
+  background-color:#ffb4a2;
+  background-color:#ffcdb2;
+}
+
+/* 25: ocean sunset */
+* {
+  background-color:#355070;
+  background-color:#6d597a;
+  background-color:#b56576;
+  background-color:#e56b6f;
+  background-color:#eaac8b;
+}
+
+/* 26: sage serenity */
+* {
+  background-color:#434a42;
+  background-color:#626c66;
+  background-color:#918b76;
+  background-color:#aca885;
+  background-color:#e1ca96;
+}
+
+/* 27: cotton candy dream */
+* {
+  background-color:#653239;
+  background-color:#af7a6d;
+  background-color:#e2d4ba;
+  background-color:#ccc7b9;
+  background-color:#eaf9d9;
+}
+
+/* 28: candy dream */
+* {
+  background-color:#990d35;
+  background-color:#d52941;
+  background-color:#fcd581;
+  background-color:#fff8e8;
+  background-color:#ffffff;
+}
+
+/* 29: mystic evening */
+* {
+  background-color:#1a1423;
+  background-color:#372549;
+  background-color:#774c60;
+  background-color:#b75d69;
+  background-color:#eacdc2;
+}
+
+
+
+
+
+/* 
+* {
+  background-color:#;
+  background-color:#;
+  background-color:#;
+  background-color:#;
+  background-color:#;
+}
+*/

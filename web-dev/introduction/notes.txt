@@ -1,0 +1,19 @@
+section can also be used as semantic elements instead of divs to mark specific section in websites 
+and in section tag u can use article tag as multiple objects instead of marking everything as div and this would make stuff easier to explain later on i guess...
+
+display: flex; 
+this makes the container flex and with its help we can manipulate the items inside the flex container 
+default flex-direction is row(horizontal) but we can change the axis by doing flex-direction: column; it makes the flex direction vertical  
+
+flex-basic: to set the initial width for div; 
+flex-grow: it takes other dives and adds width according to number/totalDivsWithFlex-grow; 
+syntax = flex-grow: 1; <-- this can change size: when 5 divs = 1/5 width size for div 
+flex-shrink:  same as flex grow but it shrinks the div instead of increasing its size 
+flex: >flex-grow< >flex-shrink< >flex-basis<; 
+
+fluid units : %, vw, vh, em, rem; 
+ways to make webpage dynamic and fluid 
+fluid units/ media queries/ 
+
+css framework : bootstrap 
+it helps add 

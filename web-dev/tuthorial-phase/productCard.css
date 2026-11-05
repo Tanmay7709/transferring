@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(21, 1, 30);
+}
+
+.container {
+  height: 80vh;
+  width: 80vh;
+  background-color: rgb(48, 41, 58);
+  position: relative;
+  left: 50vh;
+  top: 10vh;
+}
+.product-card {
+  height: 70vh;
+  width: 50vh;
+  background-color: rgb(201, 196, 255);
+  border: 0.125rem solid whitesmoke;
+  position: absolute;
+  left: 15vh;
+  top: 2vh;
+}
+
+.title {
+  height: 30vh;
+  width: 100%;
+  border-radius: 1rem;
+  position: relative;
+}
+.title span {
+  color: yellow;
+  position: absolute;
+  left: 1rem;
+  height: 8rem;
+  padding: 1rem 0.5rem;
+  background-color: rgba(236, 23, 23, 0.600);
+  font-size: 2rem;
+  font-weight: 900;
+}
+.title img {
+  width: 100%;
+}
+
+.properties {
+  color: black;
+  margin: 4rem 1rem;
+}
+.properties button {
+  height: 2rem;
+  width: 8rem;
+  border-radius: 1rem;
+  cursor: pointer; 
+}

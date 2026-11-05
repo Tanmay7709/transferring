@@ -1,0 +1,59 @@
+1. Problem statement
+  - Build a responsive Event Management Website for a fictional company called Eventify. The website should display upcoming events, allow visitors to explore event details, and provide a way to register interest.
+  - Your website must work properly on desktop, tablet, and mobile screens.
+  - You must use custom CSS for the box model, positioning, and Flexbox, while using Bootstrap for selected UI components and responsive utilities.
+
+Section 1: Navigation bar
+  Display the Eventify logo on the left.
+  Display Home, Events, About Us, and Contact links on the right.
+  Use Flexbox to align the logo and navigation links.
+  Use Bootstrap to make the navbar responsive.
+  On mobile, collapse the links into a toggle menu.
+
+Section 2: Hero section
+  Add a background image or a colored background.
+  Display a heading, description, and Explore Events button.
+  Center the content using Flexbox.
+  Add a small badge such as “Registrations Open” positioned over the hero content.
+  Ensure text remains readable on different screen sizes.
+
+Section 3: Upcoming events
+  Display at least six event cards, including:
+  --Technology Conference
+  --Web Development Workshop
+  --Music Festival
+  --Startup Meetup
+  --Photography Workshop
+  --AI and Innovation Summit
+  Each card must contain an image, title, date, location, short description, and View Details button.
+
+Section 4: Special announcement
+  Create a promotional banner offering a discount on early registrations.
+  Use position: relative on the banner container.
+  Use position: absolute for a discount badge.
+  Add suitable padding, margins, and borders.
+
+Section 5: Footer
+  Include company information, quick links, and contact details.
+  Align the content using Flexbox.
+  Use Bootstrap spacing and typography utilities where appropriate.
+  Stack the footer columns vertically on smaller screens.
+  - The website must support these breakpoints:
+      Screen width
+      Above 1024px  - Three event cards per row
+      768px–1024px - Two event cards per row
+      Below 768px - One event card per row
+
+
+Use Bootstrap for at least four of the following:
+  Responsive navbar.
+  Buttons.
+  Badge or alert.
+  Grid or responsive container utilities.
+  Form controls.
+  Modal for event details.
+  Spacing and typography utilities.
+
+
+Important: Do not build the entire website using Bootstrap classes. Students must demonstrate 
+           their understanding of custom CSS independently.

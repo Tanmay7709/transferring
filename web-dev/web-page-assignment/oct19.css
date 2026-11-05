@@ -1,0 +1,27 @@
+html {
+  font-size: 12px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  background-color: slategray;
+}
+.container {
+  height: 25vh;
+  width: 80vw;
+  background-color: rgb(173, 187, 187);
+  display: flex;
+  justify-content: space-evenly;
+}
+.child-container {
+  height: 75%;
+  width: 18vw;
+  background-color: azure;
+  border: 0.5rem solid gray;
+  font-size: 2rem;
+}

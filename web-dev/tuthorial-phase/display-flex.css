@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  color: white;
+}
+
+.container0 {
+  display: flex;
+  height: 20vh;
+  justify-content: space-around;
+  align-items: center;
+  border: 0.0625rem solid red;
+}
+.container1 {
+  display: flex;
+  height: 20vh;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.0625rem solid yellow;
+}
+.container2 {
+  display: flex;
+  height: 20vh;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 0.0625rem solid green;
+}
+
+.big-container-hori {
+  display: flex;
+  justify-content: space-evenly;
+  height: 25vh;
+  align-items: center;
+  border: 0.0625rem solid rgb(16, 235, 235);
+}
+.container-hori0 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* this applies on the cross axis and justify content applies on the main axis(flex direction: default(row);  */
+  height: 20vh;
+}
+
+.child-container {
+  height: 2.5rem;
+  width: 10rem;
+  border: 0.125rem solid grey;
+}

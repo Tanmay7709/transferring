@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aliceblue;
+  height: 16vh;
+}
+/* .logo {
+  width: 20rem;
+  height: 14vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(238, 242, 245);
+} */
+.webpage-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40vh;
+  background-color: rgb(238, 242, 245);
+  font-size: 1.25rem;
+}

@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: darkslategrey;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  height: 30vh;
+  /* justify-content: center;
+  align-items: center; */
+}
+/* 
+
+*/
+.box {
+  display: flex;
+  border: 0.125rem solid gainsboro;
+  margin: 0.5rem 1rem;
+  height: 9vh;
+  flex: 2 1 40vh;
+  flex-wrap: wrap;
+}
+.top {
+  background-color: rgb(131, 12, 12);
+}
+.mid {  
+  background-color: rgb(22, 91, 5);
+}
+.mid {
+  background-color: rgb(2, 122, 122);
+}

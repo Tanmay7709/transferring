@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 10px;
+} 
+:root {
+  --color0: #434a42;
+  --color1: #626c66;
+  --color2: #918b76;
+  --color3: #aca885;
+  --color4: #e1ca96;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* navbar */
+header#top.container {
+  background-color: var(--color0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 12rem; 
+}
+.logo {
+  height: 60%;
+}
+.logo img{
+  width: 100%;
+  height: 100%;
+}
+.weblinks {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+  font-size: 1.5rem;
+}
+.weblinks a {
+  color: var(--color3);
+}
+/* main-content */
+main#mid.container {
+  background-color: var(--color2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  padding: 2rem 0;
+}
+.smol-container {
+  background-color: var(--color3);
+  padding: 3.5rem 0 0;
+  margin: 1rem 0;
+  position: relative;
+}
+.tag {
+  position: absolute; 
+  background-color: red;
+  padding: 0.0625rem 1rem;
+  top: 0;
+}
+.event-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 36rem;
+  /* flex: 1 1 28vw; */
+  background-color: var(--color1);
+  border: 0.182rem solid var(--color4);
+  margin: 0.5rem 2rem;
+}
+.event-card img {
+  height: 60%;
+  width: 100%;
+}
+.info {
+  height: 34%;
+  margin: 0.5rem 1rem;
+}
+.info-pieces {
+  padding: 0.25rem;
+}
+.info button {
+  width: 100%;
+  font-size: 1.25rem;
+  background-color: var(--color4);
+  color: var(--color0);
+}
+/* edited few things for section 2 */
+.event-card.sec2 {
+  height: 44rem;
+}
+.info.sec2 button{
+  font-size: 1rem;
+}
+
+/* footer */
+footer#bot.container {
+  background-color: var(--color0);
+  height: 16rem;
+  display: flex;
+  position: relative;
+  padding: 4rem;
+}
+#bot.container h1 {
+  background-color: transparent;
+}
+#bot.container div {
+  flex: 1 1 28vw;
+}
+#bot.container a {
+  color: var(--color4);
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+  header#top.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  main#mid.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .smol-container {
+    flex-wrap: wrap;
+  }
+  .event-card {
+    flex: 1 1 40vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+  .event-card {
+    flex: 1 1 28vw;
+  }
+}
