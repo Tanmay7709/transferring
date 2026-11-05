@@ -1,0 +1,529 @@
+/* ==========================================================================
+   1. THEME-ADAPTIVE CSS VARIABLES (Quton UVP)
+   ========================================================================== */
+:root,
+body[data-theme="bistro"] {
+  --bg-primary: #faf6f0;
+  --bg-card: #ffffff;
+  --text-main: #2b2118;
+  --text-muted: #6e5a4f;
+  --accent: #c85a32;
+  --accent-hover: #a94622;
+  --border-color: #e6dcd2;
+  --hero-gradient: linear-gradient(135deg, #3b2314 0%, #7a3e20 100%);
+  --ad-bg: #fff4eb;
+}
+
+body[data-theme="luxe"] {
+  --bg-primary: #0f1218;
+  --bg-card: #181d26;
+  --text-main: #f3f4f6;
+  --text-muted: #9ca3af;
+  --accent: #d4af37;
+  --accent-hover: #b89423;
+  --border-color: #2a3140;
+  --hero-gradient: linear-gradient(135deg, #090b0e 0%, #1f2937 100%);
+  --ad-bg: #1e2430;
+}
+
+body[data-theme="cafe"] {
+  --bg-primary: #f2f7f4;
+  --bg-card: #ffffff;
+  --text-main: #1b3024;
+  --text-muted: #527060;
+  --accent: #2e7d5b;
+  --accent-hover: #215e43;
+  --border-color: #d5e6dc;
+  --hero-gradient: linear-gradient(135deg, #1b4332 0%, #40916c 100%);
+  --ad-bg: #e6f4ed;
+}
+
+/* ==========================================================================
+   2. BASE & MOBILE-FIRST STYLES
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  line-height: 1.5;
+  transition: background-color 0.25s ease, color 0.25s ease;
+  padding-bottom: 110px; /* Space for mobile sticky bottom bar */
+}
+
+/* Top Utility Bar */
+.top-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.65rem 1rem;
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.quton-badge {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background: var(--accent);
+  color: #fff;
+}
+
+.table-pill {
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-primary);
+}
+
+.theme-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.theme-switcher select {
+  padding: 0.3rem 0.5rem;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-primary);
+  color: var(--text-main);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Layout Container (Single column on mobile) */
+.app-layout {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Hero Banner */
+.restaurant-hero {
+  background: var(--hero-gradient);
+  color: #ffffff;
+  padding: 1.5rem 1.25rem;
+  border-radius: 14px;
+  margin-bottom: 1rem;
+}
+
+.restaurant-hero h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.restaurant-hero p {
+  font-size: 0.9rem;
+  opacity: 0.88;
+}
+
+/* Sponsored Ad Banner (Secondary Revenue Stream) */
+.ad-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--ad-bg);
+  border: 1px dashed var(--accent);
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.ad-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.ad-tag {
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+}
+
+.ad-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+}
+
+.ad-text span {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.ad-cta {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.45rem 0.85rem;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+/* Category Navigation (Swipeable on mobile) */
+.category-nav {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  scrollbar-width: none;
+}
+
+.category-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.cat-btn {
+  padding: 0.45rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  color: var(--text-main);
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.cat-btn.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
+/* Menu Grid (1 column on phone) */
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.85rem;
+}
+
+.menu-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: transform 0.15s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-2px);
+}
+
+.item-info h3 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.badge-tag {
+  font-size: 0.68rem;
+  padding: 0.1rem 0.45rem;
+  border-radius: 4px;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.item-desc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.item-price {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--accent);
+}
+
+/* Silent Staff Alert Bar (Sticky bottom on phone) */
+.silent-alert-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 95;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-color);
+  padding: 0.65rem 1rem;
+  box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.alert-bar-header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.78rem;
+  margin-bottom: 0.45rem;
+}
+
+.alert-sub {
+  color: var(--text-muted);
+  margin-left: auto;
+  font-size: 0.74rem;
+}
+
+.pulse-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #10b981;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.alert-actions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.45rem;
+}
+
+.alert-btn {
+  padding: 0.5rem 0.35rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-primary);
+  color: var(--text-main);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+.alert-btn:active {
+  transform: scale(0.96);
+}
+
+.alert-btn.primary-alert {
+  background: var(--accent);
+  color: #ffffff;
+  border-color: var(--accent);
+}
+
+/* Waitstaff Live Receiver Panel */
+.staff-dashboard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 1.25rem;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.dashboard-header h2 {
+  font-size: 1.1rem;
+}
+
+.dashboard-header p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.live-badge {
+  background: #dc2626;
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  letter-spacing: 0.06em;
+}
+
+.metrics-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+  margin-bottom: 1.25rem;
+}
+
+.metric-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 0.65rem;
+  text-align: center;
+}
+
+.metric-val {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.metric-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.alert-queue-container h3 {
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+}
+
+.alert-queue {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.empty-queue {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-align: center;
+  padding: 1.25rem;
+  border: 1px dashed var(--border-color);
+  border-radius: 8px;
+}
+
+.alert-ticket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 0.85rem;
+  background: var(--bg-primary);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+  font-size: 0.85rem;
+}
+
+.ticket-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.ticket-time {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.resolve-btn {
+  padding: 0.35rem 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-card);
+  color: var(--text-main);
+  cursor: pointer;
+}
+
+/* Toast Notification */
+.toast {
+  position: fixed;
+  top: 68px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-20px);
+  background: #111827;
+  color: #fff;
+  padding: 0.6rem 1.1rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.25s ease;
+  z-index: 200;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* ==========================================================================
+   3. DESKTOP RESPONSIVE BREAKPOINT (Phone -> Desktop Split Layout)
+   ========================================================================== */
+@media (min-width: 900px) {
+  body {
+    padding-bottom: 2rem; /* Remove mobile sticky bar offset */
+  }
+
+  .top-bar {
+    padding: 0.85rem 2rem;
+  }
+
+  .app-layout {
+    padding: 1.75rem 2rem;
+    display: grid;
+    grid-template-columns: 1.65fr 1fr; /* Left: Customer Menu | Right: Staff Dashboard */
+    align-items: start;
+    gap: 2rem;
+  }
+
+  .restaurant-hero {
+    padding: 2.25rem 2rem;
+  }
+
+  .restaurant-hero h1 {
+    font-size: 2rem;
+  }
+
+  /* Expand Menu into 2 Columns on Desktop */
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  /* Dock the Silent Alert Bar neatly inside the Diner column on Desktop */
+  .silent-alert-bar {
+    position: sticky;
+    bottom: 1.25rem;
+    margin-top: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    padding: 1rem 1.25rem;
+  }
+
+  /* Keep Staff Dashboard sticky on the right side of the screen */
+  .staff-dashboard {
+    position: sticky;
+    top: 4.75rem;
+  }
+}

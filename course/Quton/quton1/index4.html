@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quton — Smart QR Menu & Staff Alert</title>
+  <link rel="stylesheet" href="style4.css"/>
+</head>
+<body data-theme="bistro">
+
+  <!-- Top Utility Bar (Demo Theme Switcher & Table Indicator) -->
+  <header class="top-bar">
+    <div class="brand-group">
+      <span class="quton-badge">QUTON SaaS</span>
+      <span id="table-indicator" class="table-pill">Table #04</span>
+    </div>
+    <div class="theme-switcher">
+      <label for="theme-select">UI Theme:</label>
+      <select id="theme-select" aria-label="Theme Switcher">
+        <option value="bistro">Warm Bistro</option>
+        <option value="luxe">Midnight Luxe</option>
+        <option value="cafe">Botanical Cafe</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- Main Responsive Layout (Mobile Single Column -> Desktop Split Grid) -->
+  <main class="app-layout">
+    
+    <!-- LEFT / MAIN COLUMN: Customer Digital Menu -->
+    <section class="diner-view">
+      
+      <!-- Restaurant Hero Header -->
+      <div class="restaurant-hero">
+        <div class="hero-content">
+          <h1 id="restaurant-name">The Artisan Table</h1>
+          <p id="restaurant-tagline">Wood-fired craft kitchen & specialty pours</p>
+        </div>
+      </div>
+
+      <!-- Secondary Revenue: Sponsored Brand Ad Placement (₹500/mo model) -->
+      <aside class="ad-banner" id="sponsored-ad">
+        <div class="ad-content">
+          <span class="ad-tag">SPONSORED</span>
+          <div class="ad-text">
+            <strong>Craft Kombucha Co.</strong>
+            <span>Ask for our limited Yuzu-Ginger pour — ₹220</span>
+          </div>
+        </div>
+        <button class="ad-cta" id="ad-click-btn">Add to Tab</button>
+      </aside>
+
+      <!-- Category Filter Pills -->
+      <nav class="category-nav" id="category-nav">
+        <button class="cat-btn active" data-category="all">All Items</button>
+        <button class="cat-btn" data-category="small-plates">Small Plates</button>
+        <button class="cat-btn" data-category="mains">Mains</button>
+        <button class="cat-btn" data-category="drinks">Craft Drinks</button>
+        <button class="cat-btn" data-category="desserts">Desserts</button>
+      </nav>
+
+      <!-- Responsive Menu Grid -->
+      <div class="menu-grid" id="menu-grid">
+        <!-- Populated dynamically via app.js -->
+      </div>
+
+      <!-- Sticky Silent Staff Alert Bar (Customer Side) -->
+      <div class="silent-alert-bar">
+        <div class="alert-bar-header">
+          <span class="pulse-dot"></span>
+          <strong>Silent Staff Alert</strong>
+          <span class="alert-sub">Tap to notify your server instantly</span>
+        </div>
+        <div class="alert-actions">
+          <button class="alert-btn" data-alert="Water Refill">💧 Water</button>
+          <button class="alert-btn" data-alert="Call Server">🛎️ Server</button>
+          <button class="alert-btn" data-alert="Cutlery / Napkins">🍴 Cutlery</button>
+          <button class="alert-btn primary-alert" data-alert="Request Bill">🧾 Bill</button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- RIGHT COLUMN (Desktop Split View / Bottom Drawer): Live Staff Alert Receiver -->
+    <aside class="staff-dashboard">
+      <div class="dashboard-header">
+        <div>
+          <h2>Waitstaff Live Feed</h2>
+          <p>Real-time silent alerts & SaaS metrics</p>
+        </div>
+        <span class="live-badge">LIVE</span>
+      </div>
+
+      <!-- SaaS Key Metrics Mini-Row -->
+      <div class="metrics-row">
+        <div class="metric-card">
+          <span class="metric-val" id="metric-scans">142</span>
+          <span class="metric-label">Daily Scans</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-val" id="metric-alerts">0</span>
+          <span class="metric-label">Active Alerts</span>
+        </div>
+        <div class="metric-card">
+          <span class="metric-val" id="metric-ads">18</span>
+          <span class="metric-label">Ad Clicks</span>
+        </div>
+      </div>
+
+      <!-- Incoming Alert Queue -->
+      <div class="alert-queue-container">
+        <h3>Active Table Requests</h3>
+        <ul class="alert-queue" id="alert-queue">
+          <li class="empty-queue">No active table alerts right now.</li>
+        </ul>
+      </div>
+    </aside>
+
+  </main>
+
+  <!-- Toast Notification for Customer Feedback -->
+  <div id="toast" class="toast" aria-live="polite"></div>
+
+  <script src="app4.js"></script>
+</body>
+</html>

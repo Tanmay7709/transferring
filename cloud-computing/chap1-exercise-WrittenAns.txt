@@ -1,0 +1,92 @@
+[A] Multiple choice questions: 
+
+1. cloud computing delivers computing research through >> internet <<b< 
+2. which organization provided the standard definition of cloud computing >> NIST <c<
+3. which company launched Amazon Web Services >> Amazon <d< 
+4. which technology made modern cloud computing possible >> Virtualization <b< 
+5. cloud computing follows which pricing model >> pay-as-you-go <b< 
+
+6. which is NOT a characteristic of cloud computing >> Manual scaling only <c<
+7. which characteristic allows cloud resources to increase or decrease quickly >> Elasticity <b< 
+8. which cloud characteristic enables multiple users to share the same infrastructure >> Multi-tenancy <a< 
+9. cloud computing is mainly accessed through >> internet <b<
+10. which cloud service model provides virtual machines >> IaaS <c< 
+
+11. which service model is mainly used by software developers >> PaaS <b< 
+12. google workspace is an example of >> SaaS <b< 
+13. which is an example of cloud storage >> Google Drive<a< 
+14. which cloud architecture components interacts directly with users >> FrontEnd <c< 
+15. which layer contains server and storage >> BackEnd <c< 
+
+16. which is an advantage of cloud computing >> Remote accessibility <c< 
+17. which is a challenge of cloud computing? >> Internet dependency <b< 
+18. which technology reduces latency by processing data near users? >> Edge Computing <b< 
+19. which cloud provider offers EC2? >> AWS <c< 
+20. which cloud feature measures resource usage for billing? >> measured service <b< 
+
+
+/----------/-----------/
+
+
+[B] Answer the following questions in short 
+
+1. define cloud computing: 
+Cloud computing is the delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence—over the internet (“the cloud”) to offer faster innovation, flexible resources, and economies of scale. You typically pay only for cloud services you use, helping you lower your operating costs, run your infrastructure more efficiently, and scale as your business needs change.
+
+
+2. state the NIST definition of cloud computing: 
+Cloud computing is a model for enabling ubiquitous, convenient, on-demand network access to a sharedpool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction. This cloud model is composed of five essential characteristics, three service models, and four deployment models.
+
+
+3. list any four characteristics of cloud computing 
+I]      On-demand self-services: The Cloud computing services does not require any human administrators, user themselves are able to provision, monitor and manage computing resources as needed.
+II]     Broad network access: The Computing services are generally provided over standard networks and heterogeneous devices.
+III]    Rapid elasticity: The Computing services should have IT resources that are able to scale out and in quickly and on a need basis. Whenever the user require services it is provided to him and it is scale out as soon as its requirement gets over.
+IV]     Resource pooling: The IT resource (e.g., networks, servers, storage, applications, and services) present are shared across multiple applications and occupant in an uncommitted manner. Multiple clients are provided service from a same physical resource.
+V]      Measured service: The resource utilization is tracked for each application and occupant, it will provide both the user and the resource provider with an account of what has been used. This is done for various reasons like monitoring billing and effective use of resource.
+VI]     Multi-tenancy: Cloud computing providers can support multiple tenants (users or organizations) on a single set of shared resources.
+VII]    Virtualization: Cloud computing providers use virtualization technology to abstract underlying hardware resources and present them as logical resources to users.
+VIII]   Resilient computing: Cloud computing services are typically designed with redundancy and fault tolerance in mind, which ensures high availability and reliability.
+IX]     Flexible pricing models: Cloud providers offer a variety of pricing models, including pay-per-use, subscription-based, and spot pricing, allowing users to choose the option that best suits their needs.
+X]      Security: Cloud providers invest heavily in security measures to protect their users' data and ensure the privacy of sensitive information.
+XI]     Automation: Cloud computing services are often highly automated, allowing users to deploy and manage resources with minimal manual intervention.
+XII]    Sustainability: Cloud providers are increasingly focused on sustainable practices, such as energy-efficient data centers and the use of renewable energy sources, to reduce their environmental impact.
+
+
+4. what is virtualization 
+Virtualization is the fundamental technology that powers Cloud Computing. It allows you to create multiple simulated environments (Virtual Machines or VMs) from a single physical hardware system. Before virtualization, a physical server could only run one Operating System (OS) and often one task. This wasted massive amounts of resources if your app only used 10% of the CPU, the other 90% was idle.
+/ or / 
+Virtualization is a technique of separating the service from the underlying physical delivery of that service. It is the process of creating a virtual version of something like computer hardware. It was initially developed during the mainframe era. It involves using specialized software to create a virtual or software-created version of a computing resource rather than the actual version of the same resource. With the help of Virtualization, multiple operating systems and applications can run on the same machine and its same hardware at the same time, increasing the utilization and flexibility of hardware. In other words, one of the main cost-effective, hardware-reducing, and energy-saving techniques used by cloud providers is virtualization. In this video, we are going to discuss the concept of Virtualization in Cloud Computing in detail along with its various prominent benefits.
+
+
+5. differentiate between cloud computing and traditional IT infrastructure
+--------------> cloud computing: 
+I]      What is Cloud Computing?
+Cloud computing is a virtual hosting solution that is more abstract and remote, with all servers, software, and networks hosted off-premises in a real-time virtual environment. This approach enables businesses to save money by renting data storage space from cloud providers on a cost-effective, pay-per-use basis rather than investing in physical servers in-house.
+II]     A. Cost Comparison
+Compared to traditional computing, cloud computing provides a more affordable solution. In the pay-as-you-go cloud computing model, companies only pay for the resources and services they use. As a result, there is no longer any need for substantial upfront expenditures on hardware and software.
+III]    B. Scalability and Flexibility
+In cloud computing, scalability and elasticity are key advantages. Businesses can easily adjust their storage capacity, server resources, and other infrastructure elements to meet their specific needs. This flexibility allows for efficient resource allocation and cost optimization. It also enables convenient and secure access to data from any location and a variety of devices, promoting collaboration and productivity.
+IV]     C. Security Considerations
+Cloud computing providers implement robust security measures, including encryption, firewalls, and regular security updates, to protect data from unauthorized access and ensure compliance with industry regulations. In this model, data is transmitted over the internet and stored in remote data centres, making encryption essential to protect sensitive information from unauthorized access. Cloud security emphasizes encryption for both data in transit and data at rest, and this comprehensive approach helps maintain the confidentiality and integrity of data, mitigating the risks associated with data breaches and unauthorized interception.
+V]      D. Performance and Reliability
+Cloud computing offers high reliability and uptime due to redundant infrastructure, backup systems, and failover mechanisms implemented by cloud service providers.
+VI]     E. Management and Maintenance
+With cloud computing, businesses can eliminate the need to purchase, configure, and maintain physical hardware. Cloud service providers handle hardware maintenance, upgrades, and replacements, reducing IT management responsibilities.
+
+--------------> traditional IT infrastructure: 
+I]      What is Traditional IT Computing?
+Traditional IT infrastructure is a set of hardware components, including desktop computers, connected to a network by a remote server. All employees can access the company's applications and stored data through this server, often installed on the premises.
+II]     A. Cost Comparison
+In contrast, traditional computing is less cost-effective since it requires businesses to purchase and maintain their hardware, software licenses, and infrastructure, resulting in higher initial costs and ongoing operational expenses.
+III]    B. Scalability and Flexibility
+On the other hand, traditional computing lacks this scalability and elasticity, making it challenging to adapt to changing business demands and potentially leading to underutilized resources or performance bottlenecks. It may limit data access to specific physical locations or require complex remote access setups, hindering flexibility and remote work efficiency.
+IV]     C. Security Considerations
+In contrast, traditional security measures often prioritize encrypting data at rest, such as when it is stored on physical servers or in local databases, rather than focusing on encryption during data transmission. This model often focuses on securing data at rest (stored data) rather than data in transit (during transmission), which may leave vulnerabilities in network communications.
+V]      D. Performance and Reliability
+Traditional computing relies on in-house infrastructure, which may be prone to single points of failure, resulting in potential downtime and loss of productivity.
+VI]     E. Management and Maintenance
+Traditional computing requires businesses to invest in and manage their hardware, which involves ongoing maintenance, upgrades, and eventual hardware replacements, increasing operational complexities.
+
+
+
