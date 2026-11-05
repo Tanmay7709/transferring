@@ -1,0 +1,12 @@
+package pack1; 
+
+public class AccesDemo {
+  private int privVar = 10; 
+  int defVar = 20; 
+  protected int protVar = 30; 
+  public int pubVar = 40; 
+
+  public void showInsideClass() {
+    System.out.println("Inside Same class: + " privVar + ", Default : " + defVar); 
+  }
+}

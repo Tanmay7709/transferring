@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>decent local music player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="player-deck">
+    <!-- Top Bar -->
+    <header class="deck-header">
+      <div class="brand-group">
+        <span class="status-dot" id="status-dot"></span>
+        <span class="brand">MODEL-84 // STEREO CASSETTE SYSTEM</span>
+      </div>
+      <div class="color-stripes">
+        <span class="stripe s-amber"></span>
+        <span class="stripe s-coral"></span>
+        <span class="stripe s-purple"></span>
+        <span class="stripe s-cyan"></span>
+      </div>
+      <label for="mp3-upload" class="upload-btn">+ UPLOAD .MP3</label>
+      <input type="file" id="mp3-upload" accept=".mp3,audio/*" multiple hidden>
+    </header>
+
+    <!-- Main 2-Column Body -->
+    <div class="deck-body">
+      
+      <!-- Left Column: Cassette & Controls -->
+      <div class="left-panel">
+        <div class="cassette-window">
+          <div class="cassette-label-strip">
+            <span id="mode-badge">STEREO // NORMAL</span>
+            <span id="track-index-badge">00 / 00</span>
+          </div>
+
+          <div class="reels-row">
+            <div class="reel" id="reel-left">
+              <div class="reel-inner"></div>
+            </div>
+
+            <div class="tape-readout">
+              <p id="track-title">NO TAPE INSERTED</p>
+              <span id="track-time">00:00 / 00:00</span>
+            </div>
+
+            <div class="reel" id="reel-right">
+              <div class="reel-inner"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Progress Seek Bar -->
+        <div class="progress-section">
+          <input type="range" id="seek-bar" value="0" min="0" max="100" step="0.1">
+        </div>
+
+        <!-- Primary Transport Buttons -->
+        <div class="transport-controls">
+          <button id="shuf-btn" class="ctrl-btn mode-btn" title="Shuffle Play">SHUF</button>
+          <button id="prev-btn" class="ctrl-btn" title="Previous Track">|&lt;&lt;</button>
+          <button id="play-btn" class="ctrl-btn play-main" title="Play / Pause">PLAY</button>
+          <button id="next-btn" class="ctrl-btn" title="Next Track">&gt;&gt;|</button>
+          <button id="loop-btn" class="ctrl-btn mode-btn" title="Repeat Mode">LOOP: OFF</button>
+        </div>
+
+        <!-- Bottom Volume Bar -->
+        <div class="volume-row">
+          <button id="mute-btn" class="mute-btn">VOL</button>
+          <input type="range" id="volume-bar" min="0" max="1" step="0.02" value="0.8">
+          <span id="vol-pct">80%</span>
+        </div>
+      </div>
+
+      <!-- Right Column: Track Queue -->
+      <div class="right-panel">
+        <div class="playlist-header">
+          <span>TAPE QUEUE</span>
+          <button id="clear-btn" class="clear-btn" title="Clear All">CLEAR</button>
+        </div>
+        <ul id="playlist">
+          <li class="empty-msg">No tracks loaded. Click "+ UPLOAD .MP3" to add music from your files.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <audio id="audio-player"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
